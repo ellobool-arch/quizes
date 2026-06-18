@@ -1,0 +1,55 @@
+<body class="bdy">
+    <title>Simple Quiz</title>
+    <button class="resetbtn" onclick="startQuiz()">Start Quiz / Reset</button>
+<script>
+function startQuiz() {
+let userInput = prompt("What is 10 + 10? Please answer.")
+let answer = Number(userInput)
+if (answer === 20) {
+    let reply = alert("You are correct. Next question.")
+} else {
+    reply = alert("The correct answer is 20.")
+}
+    userInput = prompt("What is 90 + 15? Please answer.")
+    answer = Number(userInput)
+if (answer === 105) {
+    reply = alert("You are correct.")
+} else {
+    reply = alert("The correct answer is 105.")
+}
+    userInput = prompt("What is 120 / 2?")
+        answer = Number(userInput)
+    if (answer === 60) {
+    reply = alert("You are correct.")
+    } else {
+        reply = alert("The correct answer is 60.")
+    }
+}
+</script>
+<style>
+    .bdy {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 164);
+    }
+    .resetbtn {
+        width: 180px;
+        height: 70px;
+        border-style: solid;
+        background-color: purple;
+        color: white;
+        border-radius: 10px;
+        border-width: 4px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .resetbtn:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 8px 8px gray;
+    }
+</style>
+</body>
